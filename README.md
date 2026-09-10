@@ -3,12 +3,13 @@
 ## 📝 Descripción Breve
 Este proyecto es una práctica introductoria desarrollada en **Angular** para explorar la estructura básica de un componente e implementar el concepto de **interpolación** de datos en la vista.
 
-
 ---
 
-## Aclaración
+## ℹ️ Aclaración
 
-No se tomó en cuenta la estructura exacta pedida en la tarea porque la estructura que plantea quedó obsoleta en versiones nuevas de Angular
+No se tomó en cuenta la estructura exacta pedida en la tarea porque la estructura que plantea quedó obsoleta en versiones nuevas de Angular.
+
+---
 
 ## 🚀 Instrucciones de Instalación y Ejecución
 
@@ -31,9 +32,13 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
    ```
     La aplicación se abrirá automáticamente en tu navegador en http://localhost:4200/
 
-## 📸 Captura de pantalla
+---
+
+## 📸 Captura de pantalla y PDF de la tarea
 
 En la carpeta public > assets
+
+---
 
 ## 👤 Créditos del Autor
 
