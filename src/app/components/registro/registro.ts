@@ -29,7 +29,7 @@ const { nombre, email, mensaje } = data;
 
 console.log('Registro guardado:', { nombre, email, mensaje });
 
-  
+  this.formulario.reset();
 }
 
 }
