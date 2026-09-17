@@ -2,12 +2,21 @@
 <form [formGroup]="formulario" (submit)="guardarRegistro()" class="registro-form" >
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="nombre" formControlName="nombre">
+    @if(formulario.controls.nombre.errors?.["minlength"]){
+  <span style="color: red;">El nombre debería tener al menos 3 caracteres</span>
+  }
 
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" formControlName="email">
+    @if(formulario.controls.email.errors?.["email"]){
+  <span style="color: red;">Por favor, ingrese un email válido</span>
+  }
 
   <label for="mensaje">Mensaje:</label>
   <textarea id="mensaje" name="mensaje" formControlName="mensaje"></textarea>
+    @if(formulario.controls.mensaje.errors?.["minlength"]){
+  <span style="color: red;">El mensaje debería tener al menos 10 caracteres</span>
+  }
 
   <button>Registrar</button>
 </form>

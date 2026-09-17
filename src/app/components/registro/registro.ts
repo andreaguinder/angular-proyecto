@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+
+const { required, email, minLength } = Validators;
 
 @Component({
   imports: [ReactiveFormsModule],
@@ -14,16 +16,18 @@ formulario
 
 constructor(private formBuilder: FormBuilder) {
   this.formulario = this.formBuilder.group({
-    nombre: [''],
-    email: [''],
-    mensaje: ['']
+    nombre: ['', [required, minLength(3)]],
+    email: ['', [required, email]],
+    mensaje: ['', [required, minLength(10)]]
   });
 }
 
 guardarRegistro() {
 
 const data = this.formulario.getRawValue();
-console.log('Datos del formulario:', data);
+const { nombre, email, mensaje } = data;
+
+console.log('Registro guardado:', { nombre, email, mensaje });
 
   
 }
