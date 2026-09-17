@@ -2,4 +2,6 @@
     color: rgb(225, 27, 172);
 }
 
-
+* {
+    font-family: "Lato", sans-serif;
+}

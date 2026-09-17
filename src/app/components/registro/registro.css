@@ -1,0 +1,16 @@
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    border: 2px solid rgb(225, 27, 172);
+    border-radius: 16px;
+    padding: 16px;
+    margin: auto;
+    gap: 8px;
+}
+
+h2,p {
+    text-align: center;
+}

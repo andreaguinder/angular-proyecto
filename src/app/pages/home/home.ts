@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { Registro } from '../../components/registro/registro';
 
 @Component({
-  imports: [],
+  imports: [Registro],
   selector: 'app-home',
   styleUrl: './home.css',
   templateUrl: './home.html',
